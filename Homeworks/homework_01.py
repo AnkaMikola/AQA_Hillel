@@ -87,4 +87,3 @@ two_books = book1 + book2
 book3 = two_books / 2
 all_books = book1 + book2 + book3
 print(all_books)
-git checkout main
