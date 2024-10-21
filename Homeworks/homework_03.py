@@ -8,7 +8,7 @@ alice_in_wonderland = ('''"Would you tell me, please, which way'''
                        '''you go," said the Cat.\n"'''
                        ''' —— so long as I get somewhere,"'''
                        ''' Alice added as an explanation.\n'''
-                       '''"Oh, you're sure to do that," said the'''
+                       '''"Oh, you're sure to do that," said the '''
                        '''Cat, "if you only walk long enough."''')
 print(alice_in_wonderland)
 
