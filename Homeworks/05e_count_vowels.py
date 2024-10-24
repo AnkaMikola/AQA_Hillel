@@ -15,7 +15,6 @@
 # A->À;  a->à ; E-> É ; e->é; I->Í , i->í ; O->Ó ; o->ó; U->Ú; u->ú
 # ex. "Í wàndéréd lónély...."   and print it
 
-
 poem_text = """I wandered lonely as a cloud
 That floats on high o'er vales and hills,
 When all at once I saw a crowd,
@@ -30,6 +29,7 @@ Along the margin of a bay:
 Ten thousand saw I at a glance,
 Tossing their heads in sprightly dance."""
 
+
 lower_text = poem_text.lower()
 
 vowel1 = lower_text.count('a')
@@ -40,27 +40,46 @@ vowel5 = lower_text.count('u')
 
 print('\n-----Task 1-----\n')
 
-TEMPLATE_horizontal_rule = '-----------------'
-TEMPLATE_hat = '| vowel | count |'
-TEMPLATE_vowel1 = '|   a   |  {0}   |'
-TEMPLATE_vowel2 = '|   e   |  {0}   |'
-TEMPLATE_vowel3 = '|   i   |  {0}   |'
-TEMPLATE_vowel4 = '|   o   |  {0}   |'
-TEMPLATE_vowel5 = '|   u   |   {0}   |'
+vowels = {
+    "a": vowel1,
+    "e": vowel2,
+    "i": vowel3,
+    "o": vowel4,
+    "u": vowel5
+}
 
-print(TEMPLATE_horizontal_rule)
-print(TEMPLATE_hat)
-print(TEMPLATE_horizontal_rule)
+sep_num = 17
+print("-" * sep_num)
+print(f"| {'vowel':^5} | {'count':^5} |")
+print("-" * sep_num)
 
-print(TEMPLATE_vowel1.format(vowel1))
-print(TEMPLATE_vowel2.format(vowel2))
-print(TEMPLATE_vowel3.format(vowel3))
-print(TEMPLATE_vowel4.format(vowel4))
-print(TEMPLATE_vowel5.format(vowel5))
+for vowel, count in vowels.items():
+    print(f"| {vowel:^5} | {count:^5} |")
+print("-" * sep_num)
 
-print(TEMPLATE_horizontal_rule)
 
-# task 2
+# My first option how to solve the task #1 was:
+
+# TEMPLATE_horizontal_rule = '-----------------'
+# TEMPLATE_hat = '| vowel | count |'
+# TEMPLATE_vowel1 = '|   a   |  {0}   |'
+# TEMPLATE_vowel2 = '|   e   |  {0}   |'
+# TEMPLATE_vowel3 = '|   i   |  {0}   |'
+# TEMPLATE_vowel4 = '|   o   |  {0}   |'
+# TEMPLATE_vowel5 = '|   u   |   {0}   |'
+
+# print(TEMPLATE_horizontal_rule)
+# print(TEMPLATE_hat)
+# print(TEMPLATE_horizontal_rule)
+#
+# print(TEMPLATE_vowel1.format(vowel1))
+# print(TEMPLATE_vowel2.format(vowel2))
+# print(TEMPLATE_vowel3.format(vowel3))
+# print(TEMPLATE_vowel4.format(vowel4))
+# print(TEMPLATE_vowel5.format(vowel5))
+#
+# print(TEMPLATE_horizontal_rule)
+
 
 print('\n-----Task 2-----\n')
 trans_table = str.maketrans('AaEeIiOoUu', 'ÀàÉéÍíÓóÚú')
