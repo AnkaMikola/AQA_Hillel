@@ -70,4 +70,3 @@ adventures_of_tom_sawer_sentences.startswith('By the time')
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
-
