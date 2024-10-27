@@ -22,3 +22,6 @@ another_not_norway_text = (f'Automatisering akselererer {symbol1}yeblikket da'
                            f' roboter vil erobre planeten v{symbol2}r.'
                            f' ({symbol3})')
 print(another_not_norway_text)
+
+norway_text = 'Automatisering akselererer %syeblikket da roboter vil erobre planeten v%sr. (%s)' % ('ø', 'å', 'Æ')
+print(norway_text)
