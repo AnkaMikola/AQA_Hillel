@@ -58,7 +58,6 @@ car_data = {
 search_criteria = (2017, 1.6, 36000)
 
 year_criteria, engine_size_criteria, price_criteria = search_criteria
-
 filtered_cars = []
 for car, details in car_data.items():
     color, year, engine_size, car_type, price = details
