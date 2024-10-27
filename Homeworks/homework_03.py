@@ -1,5 +1,4 @@
 """here is a docstring."""
-
 alice_in_wonderland = ('''"Would you tell me, please, which way'''
                        '''I ought to go from here?"'''
                        '\n"That depends a good deal on where you want'''
