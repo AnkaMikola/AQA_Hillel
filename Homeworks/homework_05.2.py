@@ -2,8 +2,8 @@
 # Given list of tuples (name, surname, age, profession, City location)
 # 1 - Add your new record o the beginning of the given list
 # 2 - In modified list swap elements with indexes 1 and 5 (1<->5). Print result
-# 3 - check that all people in modified list with records indexes 6, 10, 13
-#  have age >=30. Print condition check result
+# 3 - check that all people in modified list with records indexes 6, 10, 13 have
+# age >=30. Print condition check result
 
 people_records = [
     ('John', 'Doe', 28, 'Engineer', 'New York'),
