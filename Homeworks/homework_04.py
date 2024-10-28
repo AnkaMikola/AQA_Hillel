@@ -1,3 +1,5 @@
+"""here is a docstring."""
+
 adventures_of_tom_sawer = """\
 Tom gave up the brush with reluctance in his .... face but alacrity
 in his heart. And while
@@ -5,12 +7,14 @@ the late steamer
 "Big Missouri" worked ....
 and sweated
 in the sun,
-the retired artist sat on a barrel in the .... shade close by, dangled his legs,
+the retired artist sat on a barrel in the
+ .... shade close by, dangled his legs,
 munched his apple, and planned the slaughter of more innocents.
 There was no lack of material;
 boys happened along every little while;
 they came to jeer, but .... remained to whitewash. ....
-By the time Ben was fagged out, Tom had traded the next chance to Billy Fisher for
+By the time Ben was fagged out, Tom had traded
+ the next chance to Billy Fisher for
 a kite, in good repair;
 and when he played
 out, Johnny Miller bought
@@ -19,11 +23,12 @@ hour after hour. And when the middle of the afternoon came, from being a
 poor poverty, stricken boy in the .... morning, Tom was literally
 rolling in wealth."""
 
-##  ПЕРЕЗАПИСУЙТЕ зміст змінної adventures_of_tom_sawer у завданнях 1-3
+#  ПЕРЕЗАПИСУЙТЕ зміст змінної adventures_of_tom_sawer у завданнях 1-3
 # task 01 ==
-""" Дані у строці adventures_of_tom_sawer розбиті випадковим чином, через помилку.
+""" Дані у строці adventures_of_tom_sawer
+розбиті випадковим чином, через помилку.
 треба замінити кінець абзацу на пробіл .replace("\n", " ")"""
-adventures_of_tom_sawer.replace("\n", " ")
+adventures_of_tom_sawer.replace('\n', ' ')
 
 # task 02 ==
 """ Замініть .... на пробіл
@@ -54,7 +59,8 @@ adventures_of_tom_sawer.index('Tom'[2])
 """ Розділіть змінну adventures_of_tom_sawer по кінцю речення.
 Збережіть результат у змінній adventures_of_tom_sawer_sentences
 """
-adventures_of_tom_sawer_sentences = adventures_of_tom_sawer.maketrans('. ', '\n')
+adventures_of_tom_sawer_sentences = (
+    adventures_of_tom_sawer.maketrans('. ', '\n'))
 
 # task 08
 """ Виведіть четверте речення з adventures_of_tom_sawer_sentences.
@@ -68,5 +74,6 @@ adventures_of_tom_sawer_sentences = adventures_of_tom_sawer.maketrans('. ', '\n'
 adventures_of_tom_sawer_sentences.startswith('By the time')
 
 # task 10
-""" Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
+""" Виведіть кількість слів останнього речення
+з adwentures_of_tom_sawer_sentences.
 """
