@@ -1,14 +1,14 @@
 """here is a docstring."""
-alice_in_wonderland = ('''"Would you tell me, please, which way'''
-                       '''I ought to go from here?"'''
+alice_in_wonderland = (""""Would you tell me, please, which way"""
+                       ''' I ought to go from here?"'''
                        '\n"That depends a good deal on where you want'''
-                       '''to get to," said the Cat.'''
-                       '''\n"I don't much care where —— " said Alice.\n'''
-                       '''"Then it doesn't matter which way'''
+                       """to get to," said the Cat."""
+                       """\n"I don't much care where —— " said Alice.\n"""
+                       """"Then it doesn't matter which way"""
                        '''you go," said the Cat.\n"'''
                        ''' —— so long as I get somewhere,"'''
-                       ''' Alice added as an explanation.\n'''
-                       '''"Oh, you're sure to do that," said the '''
+                       """ Alice added as an explanation.\n"""
+                       """"Oh, you're sure to do that," said the """
                        '''Cat, "if you only walk long enough."''')
 print(alice_in_wonderland)
 
@@ -30,6 +30,7 @@ print(alice_in_wonderland)
 моря становить 37 800 км2. Яку площу займають Чорне та Азов-
 ське моря разом?
 """
+print('\n-----Task 4-----')
 black_sea = 436402
 azov_sea = 37800
 sum = black_sea + azov_sea
@@ -42,6 +43,7 @@ print(sum)
 250 449 товарів. На другому та третьому – 222 950 товарів.
 Знайдіть кількість товарів, що розміщені на кожному складі.
 """
+print('\n-----Task 5-----')
 sum_goods = 375291
 warehouse1and2 = 250449
 warehouse2and3 = 222950
@@ -63,6 +65,7 @@ print(sum_goods is (warehouse1 + warehouse2 + warehouse3))
 вати необхідно буде півтора року по 1179 грн/місяць. Обчисліть
 вартість комп’ютера.
 """
+print('\n-----Task 6-----')
 payment = 1179
 months = 18
 cost = payment * months
@@ -75,17 +78,18 @@ a) 8019 : 8     d) 7248 : 6
 b) 9907 : 9     e) 7128 : 5
 c) 2789 : 5     f) 19224 : 9
 """
-namber_a = 8019 / 8
+print('\n-----Task 7-----')
+namber_a = 8019 % 8
 print(namber_a)
-namber_b = 9907 / 9
+namber_b = 9907 % 9
 print(namber_b)
-namber_c = 2789 / 5
+namber_c = 2789 % 5
 print(namber_c)
-namber_d = 7248 / 6
+namber_d = 7248 % 6
 print(namber_d)
-namber_e = 7128 / 5
+namber_e = 7128 % 5
 print(namber_e)
-namber_f = 19224 / 9
+namber_f = 19224 % 9
 print(namber_f)
 
 # task 08
@@ -100,6 +104,7 @@ print(namber_f)
 Торт            1           350 грн
 Вода            3           21 грн
 """
+print('\n-----Task 8-----')
 pizza_big = 274
 pizza_m = 218
 juice = 35
@@ -115,6 +120,7 @@ print(bd_cost)
 розміщено щонайбільше 8 фото. Скільки сторінок знадобиться
 Ігорю, щоб вклеїти всі фото?
 """
+print('\n-----Task 9-----')
 pictures = 232
 one_page = 8
 page_am = pictures / one_page
@@ -131,6 +137,7 @@ print(page_am)
 равку під час цієї подорожі, кожного разу заправляючи пов-
 ний бак?
 """
+print('\n-----Task 10-----')
 distance = 1600
 distance_b = 1600 / 100
 liter_per_100km = 9
