@@ -70,7 +70,6 @@ for car, details in car_data.items():
 def get_price(car_details):  # antohaUa: Better to use lambda here
     return car_details[1][4]  # antohaUa: Better to use lambda here
 
-
 filtered_cars.sort(key=get_price)  # antohaUa: Better to use lambda here"""
 
 filtered_cars.sort(key=lambda x: x[1][4])
