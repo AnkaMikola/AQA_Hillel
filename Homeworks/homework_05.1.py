@@ -8,8 +8,8 @@
 # Існує деяка інформація про автомобілі
 # з кольором, роком випуску, об'ємом двигуна, типом автомобіля та ціною.
 # Маємо критерії пошуку у вигляді кортежу (рік ≥, об'єм двигуна ≥, ціна ≤).
-# Напишіть код, який допоможе нам отримати автомобілі,
-# які відповідають критеріям пошуку.
+# Напишіть код, який допоможе нам отримати автомобілі, які
+# відповідають критеріям пошуку.
 # Автомобілі повинні бути відсортовані за зростанням ціни.
 # Ми повинні вивести до п'яти (5) перших знайдених елементів
 
@@ -57,22 +57,22 @@ car_data = {
 
 search_criteria = (2017, 1.6, 36000)
 
-year_criteria, engine_size_criteria, price_criteria = search_criteria
+year, engine_vol, price = search_criteria
 
 filtered_cars = []
 for car, details in car_data.items():
     color, year, engine_size, car_type, price = details
-    if (year >= year_criteria and engine_size >= engine_size_criteria and price <= price_criteria):
+    if (year >= year and engine_size >= engine_vol and price <= price):
         filtered_cars.append((car, details))
 
-"""here is a docstring."""
+
+"""
+def get_price(car_details):  # antohaUa: Better to use lambda here
+    return car_details[1][4]  # antohaUa: Better to use lambda here
 
 
-def get_price(car_details):
-    return car_details[1][4]
+filtered_cars.sort(key=get_price)  # antohaUa: Better to use lambda here"""
 
+filtered_cars.sort(key=lambda x: x[1][4])
 
-filtered_cars.sort(key=get_price)
-
-for car in filtered_cars[:5]:
-    print(car)
+print(*filtered_cars[:5], sep='\n')
