@@ -22,23 +22,20 @@ people_records = [
     ('Ava', 'White', 42, 'Journalist', 'San Diego'),
     ('Ethan', 'Anderson', 36, 'Product Manager', 'Phoenix'),
 ]
-print('\n-----Task 1-----\n')
+print('\n-----Task 1-----')
 
 addition = ('Vicky', 32, 'Lawyer', 'Zurich')
 people_records.extend(addition)
 print(people_records)
 
-print('\n-----Task 2-----\n')
+print('\n-----Task 2-----')
 
 people_records[1], people_records[5] = people_records[5], people_records[1]
 print(people_records)
 
-print('\n-----Task 3-----\n')
+print('\n-----Task 3-----')
 
-ages = []
-ages.append(people_records[6][2])
-ages.append(people_records[10][2])
-ages.append(people_records[13][2])
-
-all_above_30 = all(age >= 30 for age in ages)
-print(all_above_30)
+age_threshold = 30
+ages = [people_records[i][2] for i in [6, 10, 13]]
+all_above_30 = all(age >= age_threshold for age in ages)
+print(f'The result for condition check result is: {all_above_30} (bool).')
