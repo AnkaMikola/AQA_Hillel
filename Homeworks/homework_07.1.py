@@ -106,8 +106,7 @@ print('\n-----Task 6-----')
 
 def find_substring(str1, str2):
     """find_substring."""
-    index = str1.find(str2)
-    return index
+    return str1.find(str2)
 
 
 str1 = 'Hello, world!'
